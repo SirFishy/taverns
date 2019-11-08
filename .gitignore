@@ -25,6 +25,13 @@ __pycache__/
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
 
+#Import stuff
+.idea/modules.xml
+.idea/modules
+.idea/*.iml
+*.iml
+*.ipr
+
 # Distribution / packaging
 .Python
 build/
