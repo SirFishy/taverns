@@ -14,6 +14,7 @@ class Tavern:
         self.costPerNight = ""
         self.menu = Menu()
         self.lifestyle = Lifestyle.SQUALID
+        self.cost = ""
 
     def __str__(self):
         return "{} -- {}\nOwned by {}\nMenu: {}\nClientele: {}\nCost per night: {}"\
@@ -27,4 +28,8 @@ class Tavern:
             )
 
     def get_cost(self):
-        return get_tavern_cost(self.lifestyle)
+        if self.cost == "":
+            self.cost = get_tavern_cost(self.lifestyle)
+            return self.cost
+        else:
+            return self.costcost

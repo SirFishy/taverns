@@ -7,6 +7,7 @@ class Menu:
         self.lunch = ""
         self.dinner = ""
         self.lifestyle = Lifestyle.SQUALID
+        self.cost = ""
 
     def __str__(self):
         return "For {}, you get {} for breakfast, {} for lunch, and {} for dinner"\
@@ -18,4 +19,8 @@ class Menu:
             )
 
     def get_cost(self):
-        return get_meal_cost(self.lifestyle)
+        if self.cost == "":
+            self.cost = get_meal_cost(self.lifestyle)
+            return self.cost
+        else:
+            return self.cost
