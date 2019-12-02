@@ -32,4 +32,4 @@ class Tavern:
             self.cost = get_tavern_cost(self.lifestyle)
             return self.cost
         else:
-            return self.costcost
+            return self.cost
